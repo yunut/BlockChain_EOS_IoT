@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Target_info_control_Activity">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list_control_change"
+        android:layout_weight="1">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="9">
+        <Button
+            android:id = "@+id/btn_control_list"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:layout_height="match_parent"
+            android:text = "조작내역 조회"/>
+        <Button
+            android:id = "@+id/btn_control_device"
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:layout_height="match_parent"
+            android:text = "장치 조작하기"/>
+
+    </LinearLayout>
+</LinearLayout>

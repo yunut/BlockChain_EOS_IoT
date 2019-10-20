@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".IoT_manage_Activity">
+
+    <!--화면을 나타내는 내용을 구성하는 xml파일이다.-->
+    <!--선을 그릴수있는 뷰이다.-->
+
+    <!--밑에 목록이나온다고 알려주는 단순 텍스트뷰이다.-->
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        >
+
+
+        <!--화면 상단의 툴바를 위한 xml이다.-->
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/iot_toolbar_manage"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/Toolbar"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+
+            <!--툴바 제목-->
+            <TextView
+                android:id="@+id/toolbar_title_manage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="30dp"
+                android:text="장치 목록"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp" />
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border">
+
+        <TextView
+            android:id="@+id/IoTNolist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="24dp"
+            android:text="등록된 장치가 없습니다."/>
+
+        <ListView
+            android:id="@+id/ioT_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:divider="#fafafa"
+            android:dividerHeight="4dp"></ListView>
+    </FrameLayout>
+    <View
+        style="@style/Divider"
+        android:layout_height="53dp" />
+
+
+
+
+
+</LinearLayout>
